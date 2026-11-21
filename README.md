@@ -46,17 +46,13 @@ pip install pandas
 
 ===== Uso =====
 
-1. Coloca el archivo CSV que deseas procesar en la carpeta del proyecto.
-2. Asegúrate de que el archivo tenga las columnas requeridas:
-   - `Product`
-   - `Price`
-   - `Stock`
-3. Coloca el archivo con el nombre esperado por el programa: "inventario en VSC.csv".
-4. Ejecuta el script de Python desde la terminal:
+1. Coloca el archivo CSV en la carpeta del proyecto.
+2. Asegúrate de que tenga las columnas `Product`, `Price` y `Stock`.
+3. Utiliza el nombre `inventario en VSC.csv`.
+4. Ejecuta el programa desde la terminal:
 
-python "nombre_del_script.py"
-
-Sustituye `nombre_del_script.py` por el nombre real de tu archivo Python.
+```bash
+python "inventario en VSC.py"
 
 ===== EJEMPLO =====
 
@@ -76,7 +72,7 @@ El programa realizará las validaciones, procesará los datos y generará un arc
 |  Mouse  | -89743563 |  -10  |
 |Keyboard |    500    |   8   |
 | Monitor |   3500    |   4   |
-|  Mouse  |    300    |  15   |
+|  Mouse  |    250    |  10   |
 
 ===== Resultado esperado =====
 
@@ -86,7 +82,7 @@ El programa realizará las validaciones, procesará los datos y generará un arc
 |  Mouse  |  NaN  |  10   |
 |Keyboard |  500  |   8   |
 | Monitor | 3500  |   4   |
-|  Mouse  |  300  |  15   |
+|  Mouse  |  250  |  10   |
 
 En este ejemplo:
 
