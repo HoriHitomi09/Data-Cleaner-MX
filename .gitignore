@@ -1,0 +1,15 @@
+# Entornos virtuales
+.venv/
+.venv-1/
+.venv-2/
+venv/
+
+# Configuración local de VS Code
+.vscode/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Resultados generados
+Resultados/
