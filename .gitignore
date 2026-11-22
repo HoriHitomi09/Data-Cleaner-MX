@@ -13,3 +13,6 @@ __pycache__/
 
 # Resultados generados
 Resultados/
+
+# Archivo CSV generado por Data Cleaner MX
+inventario en VSC_LIMPIO.csv
