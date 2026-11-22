@@ -310,9 +310,7 @@ if df is not None:
     print(df)
 
     df_clean, reporte = limpiar_datos(df)
-
-    print(reporte)
-
+    
     mostrar_resumen(reporte)
 
     print("\nResultado final")
