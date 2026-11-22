@@ -1,70 +1,82 @@
-===== Data Cleaner MX =====
+Data Cleaner MX
 
 Herramienta desarrollada en Python para la limpieza y validación de archivos CSV, enfocada en la gestión de datos de inventario.
 
-===== Descripción =====
+Descripción
 
 Data Cleaner MX permite identificar y corregir problemas comunes en conjuntos de datos, como valores faltantes, registros duplicados y valores numéricos fuera de los rangos permitidos.
 
 El programa utiliza Pandas para procesar la información y generar un nuevo archivo CSV con los datos resultantes de la limpieza.
 
-===== Objetivo =====
+Objetivo
 
 Facilitar la limpieza y validación de datos de inventario mediante un proceso automatizado, reduciendo errores y mejorando la calidad de la información.
 
-===== Funcionalidades =====
+Funcionalidades
 
-- Carga de archivos CSV.
-- Validación de columnas requeridas.
-- Validación de tipos de datos.
-- Detección de valores faltantes.
-- Detección y eliminación de registros duplicados.
-- Detección de valores negativos.
-- Validación de rangos numéricos.
-- Recuperación de valores negativos cuando es posible.
-- Sustitución por valores faltantes (`NaN`) cuando los datos están fuera de los rangos permitidos.
-- Generación de un reporte con los resultados de la limpieza.
-- Exportación de los datos procesados a un nuevo archivo CSV.
-- Manejo de errores durante la carga del archivo.
+Carga de archivos CSV.
 
-===== Tecnologías utilizadas =====
+Validación de columnas requeridas.
 
-- Python
-- Pandas
-- Pathlib
+Validación de tipos de datos.
 
-===== Requisitos =====
+Detección de valores faltantes.
 
-- Python instalado.
-- Biblioteca Pandas.
+Detección y eliminación de registros duplicados.
 
-===== Instalación =====
+Detección de valores negativos.
+
+Validación de rangos numéricos.
+
+Recuperación de valores negativos cuando es posible.
+
+Sustitución por valores faltantes (NaN) cuando los datos están fuera de los rangos permitidos.
+
+Generación de un reporte con los resultados de la limpieza.
+
+Exportación de los datos procesados a un nuevo archivo CSV.
+
+Manejo de errores durante la carga del archivo.
+
+Tecnologías utilizadas
+
+Python
+
+Pandas
+
+Pathlib
+
+Requisitos
+
+Python instalado.
+
+Biblioteca Pandas.
+
+Instalación
 
 Instala Pandas desde la terminal:
 
 pip install pandas
 
-===== Uso =====
+Uso
 
-1. Coloca el archivo CSV en la carpeta del proyecto.
-2. Asegúrate de que tenga las columnas `Product`, `Price` y `Stock`.
-3. Utiliza el nombre `inventario en VSC.csv`.
-4. Ejecuta el programa desde la terminal:
+Coloca el archivo CSV en la carpeta del proyecto.
 
-```bash
+Asegúrate de que tenga las columnas Product, Price y Stock.
+
+Utiliza el nombre inventario en VSC.csv.
+
+Abre la terminal en la carpeta del proyecto.
+
+Ejecuta el programa:
+
 python "inventario en VSC.py"
 
-===== EJEMPLO =====
+El programa realizará las validaciones, procesará los datos y generará un archivo llamado inventario en VSC_LIMPIO.csv en la misma carpeta del proyecto.
 
-python "inventario en VSC.py"
+Ejemplo de datos
 
-El programa realizará las validaciones, procesará los datos y generará un archivo llamado:
-
-`inventario en VSC_LIMPIO.csv`
-
-===== Ejemplo de datos =====
-
-===== Archivo original =====
+Archivo original
 
 | Product |   Price   | Stock |
 |---------|-----------|-------|
@@ -74,7 +86,7 @@ El programa realizará las validaciones, procesará los datos y generará un arc
 | Monitor |   3500    |   4   |
 |  Mouse  |    250    |  10   |
 
-===== Resultado esperado =====
+Resultado esperado
 
 | Product | Price | Stock |
 |---------|-------|-------|
@@ -86,11 +98,13 @@ El programa realizará las validaciones, procesará los datos y generará un arc
 
 En este ejemplo:
 
-- El valor negativo de `Stock` se recupera porque su valor absoluto está dentro del rango permitido.
-- El valor de `Price` se sustituye por `NaN` porque continúa fuera del rango permitido después de intentar recuperarlo.
-- Los registros duplicados se eliminan cuando existen.
+El valor negativo de Stock se recupera porque su valor absoluto está dentro del rango permitido.
 
-===== Rangos permitidos =====
+El valor de Price se sustituye por NaN porque continúa fuera del rango permitido después de intentar recuperarlo.
+
+Los registros duplicados se eliminan cuando existen.
+
+Rangos permitidos
 
 Actualmente, el programa utiliza los siguientes rangos:
 
@@ -101,23 +115,28 @@ Actualmente, el programa utiliza los siguientes rangos:
 
 Estos valores pueden modificarse en la configuración del código.
 
-===== Manejo de errores =====
+Manejo de errores
 
 El programa contempla situaciones como:
 
-- Archivo CSV inexistente.
-- Archivo CSV vacío.
-- Errores de lectura o formato.
-- Columnas requeridas faltantes.
-- Tipos de datos no válidos.
+Archivo CSV inexistente.
 
-===== Estado del proyecto =====
+Archivo CSV vacío.
 
-Versión inicial funcional. (1.0)
+Errores de lectura o formato.
+
+Columnas requeridas faltantes.
+
+Tipos de datos no válidos.
+
+Estado del proyecto
+
+Versión 1.0 — Versión funcional inicial.
 
 Proyecto desarrollado como práctica de programación y procesamiento de datos con Python y Pandas.
 
-===== Autor =====
+Autor
 
 Luis Elias Avalos Tinoco
+
 Proyecto personal: Data Cleaner MX.
